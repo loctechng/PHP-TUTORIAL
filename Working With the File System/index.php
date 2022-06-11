@@ -29,8 +29,31 @@
         mkdir('New Folder');
     
     } else {
-        echo 'File does not exist';
+        // echo 'File does not exist';
     }
 
+    // File System 2
+    // Handling Files on the system with php
+    $_file = 'test.txt';
+
+    // opening a file for reading
+    $handleFile = fopen($_file, 'a+' );
+
+    // read the file
+    // echo fread( $handleFile, filesize($_file)  );
+    // echo fread( $handleFile, 5 );
+
+    // read a single line
+    // echo fgets($handleFile);
+
+    // read a single character
+    echo fgetc($handleFile);
+
+    // writing to a file with php
+    fwrite($handleFile, "\nEverything is going well!");
+
+    fclose($handleFile);
+
+    // unlink($_file);
 
 ?>

@@ -40,11 +40,11 @@
             <label for="name" >Student Name: </label>    
             <input type="text" id="name" name="studentName" value="<?php echo $studentName ?>" >
             <div style="color:red;"> <?php echo "error";?> </div>
-            <br>
+
             <label for="email">Email: </label>    
             <input type="text" id="email" name="email" value="<?php echo $email ?>">
             <div style="color:red;"> <?php echo "error";?> </div>
-            <br>
+            
             <input type="submit" value="Click me" name="submit">
         </form>
     </div>
