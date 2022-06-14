@@ -7,15 +7,15 @@
         header{
             display: flex;
             color: white;
-            height: 200px;
+            height: 60px;
             background-color: navy;
             justify-content: center;
             align-items: center;
         }
-        h1{
-            /* width: 50%; */
-            /* margin: 0px auto; */
-        }
+        /* h1{
+             width: 50%; 
+             margin: 0px auto; 
+        } */
         footer{
             display: flex;
             color: white;
