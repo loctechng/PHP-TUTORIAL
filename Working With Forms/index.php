@@ -23,7 +23,7 @@
             // echo htmlspecialchars($_GET['email']);
             $email = $_GET['email'];
             if ( !filter_var( $email, FILTER_VALIDATE_EMAIL) ) {
-                $email['email'] = "The email is invalid";
+                $errors['email'] = "The email is invalid";
             } 
        }
    }
@@ -39,11 +39,11 @@
         <form action="" method="GET">
             <label for="name" >Student Name: </label>    
             <input type="text" id="name" name="studentName" value="<?php echo $studentName ?>" >
-            <div style="color:red;"> <?php echo "error";?> </div>
+            <div style="color:red;"> <?php echo $errors['studentName'];?> </div>
 
             <label for="email">Email: </label>    
             <input type="text" id="email" name="email" value="<?php echo $email ?>">
-            <div style="color:red;"> <?php echo "error";?> </div>
+            <div style="color:red;"> <?php echo $errors['email'];?> </div>
             
             <input type="submit" value="Click me" name="submit">
         </form>
