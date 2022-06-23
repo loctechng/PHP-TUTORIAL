@@ -1,4 +1,18 @@
 <?php
+    // connect to database
+    // mysqli_connect takes 4 arguments: 
+    // 1. hostname, 2. username, 3. password, 4. databaseName
+
+    $conn = mysqli_connect('localhost', 'paul', '123456789ab', 'studentdetail' );
+
+    if($conn == true){
+        echo 'Connection was made. ';
+    } else{
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+
+
    $studentName = '';
    $email = '';
 
