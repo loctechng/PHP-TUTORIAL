@@ -4,6 +4,24 @@
         *{
             margin: 0;
         }
+        .error-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .error-message{
+            position: absolute;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .bg-green{
+            background: green;
+        }
+        .bg-red{
+            background: red;
+        }
         header{
             display: flex;
             color: white;
@@ -50,25 +68,25 @@
         input{
             margin:0;
             width: 100%;
-            border: 0;
-            color: white;
+            /* border: 0; */
+            color: black;
             font-size: 20px;
             font-weight: bold;
             padding: 15px;
             border-radius: 5px;
             box-sizing: border-box;
-            background-color: #999;
+            background-color: lightblue;
         }
         input[type='submit']{
-            color: white;
+            color: black;
             width: 50%;
-            margin-bottom: 8px;
+            margin: 8px;
         }
         input[type='submit']:hover{
             color: dimgrey;
             width: 50%;
-            margin-bottom: 8px;
-            background-color: #eee;
+            margin: 8px;
+            background-color: blue;
         }
         input[type='submit']:active{
             color: dimgrey;

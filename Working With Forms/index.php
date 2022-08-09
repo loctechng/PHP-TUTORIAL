@@ -3,12 +3,12 @@
     // mysqli_connect takes 4 arguments: 
     // 1. hostname, 2. username, 3. password, 4. databaseName
 
-    $conn = mysqli_connect('localhost', 'paul', '123456789ab', 'studentdetail' );
+    $conn = mysqli_connect('localhost', 'paul', '123456789ab', 'studentdetails' );
 
     if($conn == true){
-        echo 'Connection was made. ';
+        echo "<div class='error-container'><p class='error-message bg-green'>Connection was made.</p></div> <script>var err_red = document.querySelector('.error-container'); setTimeout(()=>{err_red.style.display = 'none'}, 3000)</script>";
     } else{
-        echo 'Connection error: ' . mysqli_connect_error();
+        echo "<div class='error-container bg-red'><p class='error-message bg-red'>Connection error: " . mysqli_connect_error() . " </p></div> <script>var err_red = document.querySelector('.error-container'); setTimeout(()=>{err_red.style.display = 'none'}, 3000)</script>";
     }
 
 
